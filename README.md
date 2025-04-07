@@ -94,7 +94,7 @@ These placeholders are substituted within the format string provided to the `-H`
 
 ## Examples
 
-````bash
+```bash
 # Concatenate two specific files to the terminal (default header)
 ./cath.sh /etc/hosts /etc/resolv.conf
 
@@ -116,18 +116,3 @@ These placeholders are substituted within the format string provided to the `-H`
 # Process a potentially large directory quietly, outputting to a file
 # (No progress bar, no confirmation prompt)
 ./cath.sh -q -o system_logs.txt /var/log```
-
-## Testing
-
-A test script (`test_cath.sh`) is included in the repository to verify the core functionality and options of `cath.sh`.
-
-1.  Ensure both `cath.sh` and `test_cath.sh` are present and executable:
-    ```bash
-    chmod +x cath.sh test_cath.sh
-    ```
-2.  Run the test script from the same directory:
-    ```bash
-    ./test_cath.sh
-    ```
-    The script will create a temporary environment, execute a series of tests covering different scenarios (basic concatenation, recursion, options like `-o`, `-q`, `-h`, error conditions), report PASS or FAIL for each, and provide a final summary. It exits with status 0 if all tests pass, and 1 otherwise.
-````
