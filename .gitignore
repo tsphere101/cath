@@ -1,0 +1,14 @@
+cath_test_env_*
+*.tmp
+*_out.txt
+quiet_out.txt
+output.txt
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
